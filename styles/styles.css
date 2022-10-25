@@ -54,9 +54,11 @@ ul {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1 2;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .web-logo {
   color: var(--accent-color);
@@ -86,7 +88,7 @@ header{
   display: flex;
   /*  justify-content: center;  */
   align-items: center;
-  height: 80px;
+  
 }
 
 .site-nav-flex {
@@ -107,6 +109,9 @@ header{
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
 }
 
 .site-nav .link:hover,
@@ -132,6 +137,10 @@ header{
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
+
 }
 
 /* styles for headers contacts */
@@ -143,6 +152,8 @@ header{
 /* Styling hero section */
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
 }
 .hero-title {
@@ -165,24 +176,33 @@ header{
   letter-spacing: 0.06em;
   text-align: center;
   border: none;
-  border-radius: 4px;feature
-  cursor: pointer;
-  padding: 10px 32px;
+  border-radius: 4px;
+  cursor: pointer; 
+  display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 216px; 
+    height: 50px;
+  
+  
 }
 
-.hero{
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+
 
 .hero>.container{
   text-align: center;
 }
 
+.hero-flex{
+  display: flex;
+  flex-direction: column;
+
+}
+
 /* Section features */
 
 .features{
-  padding-bottom: 0tean;
+  padding-bottom: 0px;
 }
 
 .features-list {
@@ -407,19 +427,19 @@ header{
 
 .portfolio img {
   display: block;
+  width: 100%;
  
 }
 .portfolio.list {
  
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .portfolio-item {
   
-  margin-right: 30px;
-  margin-bottom: 30px;
   background: #ffffff;
-  flex-basis: 370px;
+  flex-basis:calc((100% - 60px) / 3);
 
 }
 
@@ -429,10 +449,4 @@ header{
   border-right: 1px solid #eeeeee ;
   border-bottom: 1px solid #eeeeee ;
 }
-.portfolio-item:nth-child(3n) {
-  margin-right: 0;
-}
 
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
